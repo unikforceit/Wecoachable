@@ -1,0 +1,63 @@
+.box-item {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+.box-item-img {
+  position: relative;
+  .rating-price {
+    .rating {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background-color: #fff;
+      border-radius: 52px;
+      text-align: center;
+      width: 97px;
+      height: 40px;
+      line-height: 40px;
+      i {
+        color: $text_color_1;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 120%;
+      }
+    }
+    .price {
+      position: absolute;
+      bottom: -45px;
+      right: 32px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 90px;
+      background-color: $text_color_1;
+      color: #fff;
+      span {
+        font-size: 28px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.box-item-content {
+  padding: 27px 32px 36px;
+  span {
+    font-size: 16px;
+    font-weight: $fw_medium;
+    line-height: 160%;
+  }
+  h4 {
+    font-family: "HelveticaBold";
+    font-size: 25px;
+    font-weight: $fw_bold;
+    line-height: 130%;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 160%;
+  }
+}

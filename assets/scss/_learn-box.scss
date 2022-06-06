@@ -1,0 +1,33 @@
+.learn-left {
+  background-color: #693fd7;
+  border-radius: 12px 0 0 12px;
+  padding: 76px 81px 76px 60px;
+  color: #fff;
+  h3 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 11px;
+  }
+  &[data-background] {
+    background-size: contain;
+  }
+}
+.design-load {
+  display: flex;
+  justify-content: center;
+  a {
+    width: 210px;
+    height: 58px;
+    border-radius: 12px;
+    background-color: #ff5400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    svg {
+      fill: #fff;
+    }
+  }
+}
