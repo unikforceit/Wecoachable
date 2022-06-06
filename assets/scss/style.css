@@ -202,6 +202,107 @@ select:visited {
   row-gap: 30px;
 }
 
+select {
+  display: none;
+}
+
+.form-select {
+  background-image: none;
+}
+
+.nice-select {
+  background-color: transparent !important;
+  border-radius: 7px;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 18px;
+  color: #999;
+  font-weight: normal;
+  outline: none;
+  padding: 30px 22px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  height: 71px;
+  margin-bottom: 18px;
+  line-height: 0;
+}
+
+.nice-select:hover {
+  border-color: #d1d5de;
+}
+
+.nice-select .current {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nice-select .option.selected {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.nice-select::after {
+  border: none;
+  content: "\f107";
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 600;
+  height: 5px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 20px;
+  top: 55% !important;
+  -webkit-transform-origin: 66% 66%;
+          transform-origin: 66% 66%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+  color: #fff;
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+  border-color: #d1d5de;
+  font-weight: normal;
+}
+
+.nice-select.open:after {
+  top: 40% !important;
+  right: 15px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+
 .pt-80 {
   padding-top: 80px;
 }
@@ -725,6 +826,11 @@ select {
   padding: 0;
 }
 
+.main-header.sticky-on .menu-header .menu-diveder,
+.main-header.sticky-on .menu-header .header-search {
+  display: none;
+}
+
 .main-header.sticky-on .navigation-main-area .dropdown .dropdown-menu {
   top: 60px;
 }
@@ -740,7 +846,7 @@ select {
 }
 
 .menu-header .main-menu {
-  padding: 26px 60px;
+  padding: 40px 0px;
 }
 
 /* Start Navigation area */
@@ -752,9 +858,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-column-gap: 32px;
           column-gap: 32px;
 }
@@ -1131,6 +1237,80 @@ a:hover {
             flex: 0 0 auto;
     width: 20%;
   }
+}
+
+.menu-diveder {
+  display: inline-block;
+  margin: 40px 0;
+  width: 100%;
+  height: 2px;
+  background-color: #275096;
+}
+
+.menuSearch .nice-select {
+  width: 151px !important;
+  background: #fff !important;
+  color: #013183 !important;
+  border-radius: 5px 0 0 5px;
+}
+
+.menuSearch .nice-select .current {
+  color: #013183;
+}
+
+.menuSearch .nice-select::after {
+  color: #013183;
+}
+
+.menuSearch a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.menuSearch a input {
+  width: 100%;
+  height: 71px;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: #4d6fa8;
+  padding: 23px 48px;
+  color: #fff;
+}
+
+.menuSearch a input::-webkit-input-placeholder {
+  color: #b8c5dc;
+}
+
+.menuSearch a input:-ms-input-placeholder {
+  color: #b8c5dc;
+}
+
+.menuSearch a input::-ms-input-placeholder {
+  color: #b8c5dc;
+}
+
+.menuSearch a input::placeholder {
+  color: #b8c5dc;
+}
+
+.menuSearch a::after {
+  border: none;
+  content: "\f002";
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 600;
+  height: 5px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+  color: #fff;
 }
 
 .promo-tab {

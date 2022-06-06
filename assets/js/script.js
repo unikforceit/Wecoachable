@@ -17,8 +17,9 @@ Last change:    00/00/00
         this.BackgroundImage();
         this.MobileMenu();
         this.SidebarMenu();
-        this.scrollTop();
         this.TestiSlider();
+        this.Niceselect();
+        this.scrollTop();
       },
       preloader: function () {
         $(window).on("load", function () {
@@ -81,6 +82,11 @@ Last change:    00/00/00
             el: ".swiper-pagination",
             clickable: true,
           },
+        });
+      },
+      Niceselect: function () {
+        $(document).ready(function () {
+          $("select").niceSelect();
         });
       },
       scrollTop: function () {
