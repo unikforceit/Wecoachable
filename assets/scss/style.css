@@ -994,6 +994,47 @@ select {
 .footer-top {
   background-color: #013183;
   padding: 120px 0px 80px;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-top .footer-element-1,
+  .footer-top .footer-element-3,
+  .footer-top .footer-element-4,
+  .footer-top .footer-element-5,
+  .footer-top .footer-element-6 {
+    display: none;
+  }
+}
+
+.footer-element-1 {
+  position: absolute;
+  top: 72px;
+  left: 94px;
+}
+
+.footer-element-3 {
+  position: absolute;
+  top: 93px;
+  right: 129px;
+}
+
+.footer-element-4 {
+  position: absolute;
+  bottom: 73px;
+  left: 738px;
+}
+
+.footer-element-5 {
+  position: absolute;
+  bottom: 67px;
+  right: 184px;
+}
+
+.footer-element-6 {
+  position: absolute;
+  top: 18px;
+  left: 600px;
 }
 
 .footer-widget .footer-logo {
