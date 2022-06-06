@@ -54,6 +54,17 @@
     }
   }
 }
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  .icon,
+  .text {
+    color: #fff;
+    font-size: 20px;
+  }
+}
 .footer-copy {
   padding: 27px 0;
   background-color: #012665;
