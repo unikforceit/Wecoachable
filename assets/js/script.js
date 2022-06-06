@@ -15,6 +15,8 @@ Last change:    00/00/00
       init: function () {
         this.preloader();
         this.BackgroundImage();
+        this.MobileMenu();
+        this.SidebarMenu();
         this.scrollTop();
         this.TestiSlider();
       },
@@ -30,6 +32,44 @@ Last change:    00/00/00
             "url(" + $(this).attr("data-background") + ")"
           );
         });
+      },
+      MobileMenu: function () {
+        jQuery(window).on("scroll", function () {
+          if (jQuery(window).scrollTop() > 250) {
+            jQuery(".main-header").addClass("sticky-on");
+          } else {
+            jQuery(".main-header").removeClass("sticky-on");
+          }
+        });
+        $(".open_mobile_menu").on("click", function () {
+          $(".mobile_menu_wrap").toggleClass("mobile_menu_on");
+        });
+        $(".open_mobile_menu").on("click", function () {
+          $("body").toggleClass("mobile_menu_overlay_on");
+        });
+        if ($(".mobile_menu li.dropdown ul").length) {
+          $(".mobile_menu li.dropdown").append(
+            '<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>'
+          );
+          $(".mobile_menu li.dropdown .dropdown-btn").on("click", function () {
+            $(this).prev("ul").slideToggle(500);
+          });
+        }
+      },
+      SidebarMenu: function () {
+        if ($(".sidebar_dropdown").length) {
+          $(".sidebar_dropdown").append(
+            '<div class="sidebar-dropdown-btn"><span class="fas fa-plus"></span></div>'
+          );
+          $(".sidebar-dropdown-btn").on("click", function () {
+            $(this).prev("ul").slideToggle(500);
+            $(this).html(
+              $(this).html() == '<span class="fas fa-plus"></span>'
+                ? '<span class="fas fa-minus"></span>'
+                : '<span class="fas fa-plus"></span>'
+            );
+          });
+        }
       },
       TestiSlider: function () {
         var swiper = new Swiper(".mySwiper", {

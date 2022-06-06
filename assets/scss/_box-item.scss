@@ -45,15 +45,18 @@
 .box-item-content {
   padding: 27px 32px 36px;
   span {
+    display: inline-block;
     font-size: 16px;
     font-weight: $fw_medium;
     line-height: 160%;
+    padding-bottom: 12px;
   }
   h4 {
     font-family: "HelveticaBold";
     font-size: 25px;
     font-weight: $fw_bold;
     line-height: 130%;
+    padding-bottom: 12px;
   }
   p {
     font-size: 14px;
