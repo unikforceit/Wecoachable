@@ -17,7 +17,21 @@
 .think-box {
   position: relative;
   color: #fff;
+  @media screen and (max-width: 767px) {
+    padding: 0 10px;
+  }
   h3 {
+    font-size: 56px;
     color: #fff;
+    padding-bottom: 24px;
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 20px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
   }
 }

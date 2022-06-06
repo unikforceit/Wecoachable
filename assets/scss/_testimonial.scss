@@ -9,6 +9,9 @@
     width: 100%;
     height: 585px;
     background-color: #68b999;
+    @media screen and (max-width: 991px) {
+      height: 700px;
+    }
   }
   .testi-element-1 {
     position: absolute;

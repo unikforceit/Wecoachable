@@ -8,9 +8,19 @@
     font-weight: 700;
     color: #fff;
     padding-bottom: 11px;
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+    }
   }
   &[data-background] {
     background-size: contain;
+  }
+}
+@media screen and (max-width: 991px) {
+  .learn-left,
+  .learn-right {
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
 .design-load {

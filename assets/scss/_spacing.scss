@@ -9,7 +9,13 @@
 }
 .ml-35 {
   margin-left: 35px !important;
+  @media screen and (max-width: 991px) {
+    margin-left: 0 !important;
+  }
 }
 .ml-30 {
   margin-left: 30px !important;
+  @media screen and (max-width: 991px) {
+    margin-left: 0 !important;
+  }
 }
