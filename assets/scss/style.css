@@ -214,6 +214,14 @@ select:visited {
   padding-bottom: 72px;
 }
 
+.ml-35 {
+  margin-left: 35px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
 .preloader {
   background-color: #013183;
   width: 100%;
@@ -871,6 +879,116 @@ select {
 
 .design-load a svg {
   fill: #fff;
+}
+
+.testimonial {
+  padding: 160px 0 120px;
+  position: relative;
+}
+
+.testimonial::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 585px;
+  background-color: #68b999;
+}
+
+.testimonial .testi-element-1 {
+  position: absolute;
+  right: 134px;
+  bottom: 115px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .testimonial .testi-element-1 {
+    display: none;
+  }
+}
+
+.testi-item-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.testi-author {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.testi-author-content {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.testi-author-content h4 {
+  font-size: 28px;
+  color: #013183;
+  line-height: 130%;
+  padding-bottom: 12px;
+}
+
+.testi-author-content p {
+  font-size: 16px;
+  color: #99adcd;
+  line-height: 160%;
+}
+
+.testi-text {
+  position: relative;
+}
+
+.testi-text img {
+  position: absolute;
+  top: -140px;
+}
+
+.testi-text p {
+  font-size: 27px;
+  color: #fff;
+  line-height: 160%;
+}
+
+.swiper-pagination {
+  bottom: 100px !important;
+  left: 60px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #b3dccc;
+  margin-right: 20px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+  position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .testi-text img {
+    display: none;
+  }
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 .footer-top {
