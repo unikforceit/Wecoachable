@@ -11,7 +11,19 @@
   font-size: 20px;
   color: $primary_color !important;
   font-weight: 700;
+  transition: all 0.3s;
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+    font-size: 16px;
+  }
   i {
     padding-left: 6px;
+  }
+  &:hover {
+    background-color: $primary_color;
+    color: #fff !important;
+    i {
+      color: #fff;
+    }
   }
 }

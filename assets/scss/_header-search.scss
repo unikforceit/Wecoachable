@@ -11,6 +11,11 @@
     background: #fff !important;
     color: #013183 !important;
     border-radius: 5px 0 0 5px;
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      width: 100% !important;
+      border-radius: 5px 5px 0 0;
+    }
     .current {
       color: #013183;
     }
@@ -30,6 +35,10 @@
       background-color: #4d6fa8;
       padding: 23px 48px;
       color: #fff;
+      @media screen and (max-width: 767px) {
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+      }
       &::placeholder {
         color: #b8c5dc;
       }
@@ -50,6 +59,9 @@
       transition: all 0.15s ease-in-out;
       width: 5px;
       color: #fff;
+      @media screen and (max-width: 767px) {
+        right: 30px;
+      }
     }
   }
 }

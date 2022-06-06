@@ -1,6 +1,16 @@
 .box-item {
   background-color: #f7f7f7;
   border-radius: 12px;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0px 10px 250px -40px rgba(0, 0, 0, 0.2);
+    .box-item-content {
+      background-color: #fff;
+      .box-item-title {
+        color: #ff5400;
+      }
+    }
+  }
 }
 .box-item-img {
   position: relative;
@@ -44,14 +54,15 @@
 }
 .box-item-content {
   padding: 27px 32px 36px;
-  span {
-    display: inline-block;
+  .box-item-cat {
+    display: block;
     font-size: 16px;
     font-weight: $fw_medium;
     line-height: 160%;
     padding-bottom: 12px;
   }
-  h4 {
+  .box-item-title {
+    display: block;
     font-family: "HelveticaBold";
     font-size: 25px;
     font-weight: $fw_bold;

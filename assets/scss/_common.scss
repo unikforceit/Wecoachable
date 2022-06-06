@@ -229,7 +229,7 @@ select {
   white-space: nowrap;
   width: 100%;
   margin-bottom: 18px;
-  line-height: 0;
+  line-height: 10px;
   &:hover {
     border-color: #d1d5de;
   }
@@ -285,6 +285,6 @@ select {
   font-size: 40px;
   color: #012665;
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 23px;
   }
 }

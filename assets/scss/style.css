@@ -602,7 +602,7 @@ select {
   white-space: nowrap;
   width: 100%;
   margin-bottom: 18px;
-  line-height: 0;
+  line-height: 10px;
 }
 
 .nice-select:hover {
@@ -666,7 +666,7 @@ select {
 
 @media screen and (max-width: 768px) {
   .section-title {
-    font-size: 30px;
+    font-size: 23px;
   }
 }
 
@@ -1045,6 +1045,7 @@ a:hover {
 .header_btn {
   display: inline-block;
   background-color: #ff5400;
+  border: 1px solid #ff5400;
   padding: 11px 28px;
   border-radius: 5px;
   font-size: 16px;
@@ -1054,6 +1055,7 @@ a:hover {
 
 .header_btn:hover {
   color: #fff;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1134,6 +1136,14 @@ a:hover {
   background: #fff !important;
   color: #013183 !important;
   border-radius: 5px 0 0 5px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menuSearch .nice-select {
+    width: 100% !important;
+    border-radius: 5px 5px 0 0;
+  }
 }
 
 .menuSearch .nice-select .current {
@@ -1158,6 +1168,13 @@ a:hover {
   background-color: #4d6fa8;
   padding: 23px 48px;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .menuSearch a input {
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+  }
 }
 
 .menuSearch a input::-webkit-input-placeholder {
@@ -1195,12 +1212,24 @@ a:hover {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .menuSearch a::after {
+    right: 30px;
+  }
+}
+
 .promo-tab {
   padding-bottom: 37px;
 }
 
 .promo-tab .nav {
   gap: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .promo-tab .nav {
+    gap: 8px;
+  }
 }
 
 .promo-tab .nav .nav-item .nav-link {
@@ -1225,6 +1254,21 @@ a:hover {
 .box-item {
   background-color: #f7f7f7;
   border-radius: 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-item:hover {
+  -webkit-box-shadow: 0px 10px 250px -40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 250px -40px rgba(0, 0, 0, 0.2);
+}
+
+.box-item:hover .box-item-content {
+  background-color: #fff;
+}
+
+.box-item:hover .box-item-content .box-item-title {
+  color: #ff5400;
 }
 
 .box-item-img {
@@ -1275,15 +1319,16 @@ a:hover {
   padding: 27px 32px 36px;
 }
 
-.box-item-content span {
-  display: inline-block;
+.box-item-content .box-item-cat {
+  display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 160%;
   padding-bottom: 12px;
 }
 
-.box-item-content h4 {
+.box-item-content .box-item-title {
+  display: block;
   font-family: "HelveticaBold";
   font-size: 25px;
   font-weight: 700;
@@ -1311,10 +1356,28 @@ a:hover {
   font-size: 20px;
   color: #013183 !important;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .section-link {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 
 .section-link i {
   padding-left: 6px;
+}
+
+.section-link:hover {
+  background-color: #013183;
+  color: #fff !important;
+}
+
+.section-link:hover i {
+  color: #fff;
 }
 
 .think-box-content {
@@ -1373,6 +1436,12 @@ a:hover {
   border-radius: 12px 0 0 12px;
   padding: 76px 81px 76px 60px;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .learn-left {
+    padding: 50px 35px;
+  }
 }
 
 .learn-left h3 {
@@ -1480,11 +1549,18 @@ a:hover {
   background-color: #fff;
 }
 
-.testi-author-content h4 {
+.testi-author-content a {
+  display: block;
   font-size: 28px;
   color: #013183;
   line-height: 130%;
   padding-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .testi-author-content a {
+    font-size: 24px;
+  }
 }
 
 .testi-author-content p {
@@ -1506,6 +1582,12 @@ a:hover {
   font-size: 27px;
   color: #fff;
   line-height: 160%;
+}
+
+@media screen and (max-width: 767px) {
+  .testi-text p {
+    font-size: 20px;
+  }
 }
 
 .swiper-pagination {

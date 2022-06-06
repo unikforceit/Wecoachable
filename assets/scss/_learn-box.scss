@@ -3,6 +3,9 @@
   border-radius: 12px 0 0 12px;
   padding: 76px 81px 76px 60px;
   color: #fff;
+  @media screen and (max-width: 767px) {
+    padding: 50px 35px;
+  }
   h3 {
     font-size: 56px;
     font-weight: 700;
