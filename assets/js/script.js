@@ -13,18 +13,12 @@ Last change:    00/00/00
 
     Basic: {
       init: function () {
-        this.preloader();
         this.BackgroundImage();
         this.MobileMenu();
         this.SidebarMenu();
         this.TestiSlider();
         this.Niceselect();
         this.scrollTop();
-      },
-      preloader: function () {
-        $(window).on("load", function () {
-          $(".preloader").delay(1500).fadeOut("slow");
-        });
       },
       BackgroundImage: function () {
         $("[data-background]").each(function () {

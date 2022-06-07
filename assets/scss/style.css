@@ -545,7 +545,7 @@ select {
 }
 .nice-select::after {
   border: none;
-  content: url("/assets/image/arrow-down.svg");
+  content: url("../image/arrow-down.svg");
   display: block;
   height: 5px;
   pointer-events: none;
@@ -569,7 +569,7 @@ select {
 }
 
 .right-cate .nice-select::after {
-  content: url("/assets/image/arrow-down-white.svg");
+  content: url("../image/arrow-down-white.svg");
 }
 
 .section-title {
@@ -1020,7 +1020,7 @@ select {
 }
 .menuSearch a::after {
   border: none;
-  content: url("/assets/image/search-normal.svg");
+  content: url("../image/search-normal.svg");
   display: block;
   height: 5px;
   margin-top: -4px;
