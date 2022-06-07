@@ -45,11 +45,8 @@
     }
     &::after {
       border: none;
-      content: "\f002";
+      content: url('/assets/image/search-normal.svg');
       display: block;
-      font-family: "Font Awesome 5 Free";
-      font-size: 20px;
-      font-weight: 600;
       height: 5px;
       margin-top: -4px;
       pointer-events: none;

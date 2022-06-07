@@ -13,7 +13,7 @@
 }
 @font-face {
   src: url(../fonts/HelveticaNowText-Bold.ttf);
-  font-family: "HelveticaBold", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -25,9 +25,10 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   color: #012665;
-  font-family: "Helvetica", serif;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
   background-color: #fff;
-  line-height: 1.5;
+  line-height: 1.56;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
@@ -42,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica", serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 38px;
   color: #232323;
   font-weight: 700;
@@ -1019,11 +1020,8 @@ select {
 }
 .menuSearch a::after {
   border: none;
-  content: "\f002";
+  content: url("/assets/image/search-normal.svg");
   display: block;
-  font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  font-weight: 600;
   height: 5px;
   margin-top: -4px;
   pointer-events: none;
@@ -1073,11 +1071,9 @@ select {
   border-radius: 12px;
   transition: all 0.3s;
 }
-.box-item:hover {
-  box-shadow: 0px 10px 250px -40px rgba(0, 0, 0, 0.2);
-}
 .box-item:hover .box-item-content {
   background-color: #fff;
+  box-shadow: 0px 10px 250px -40px rgba(0, 0, 0, 0.2);
 }
 .box-item:hover .box-item-content .box-item-title {
   color: #ff5400;
@@ -1134,7 +1130,7 @@ select {
 }
 .box-item-content .box-item-title {
   display: block;
-  font-family: "HelveticaBold";
+  font-family: "Helvetica", sans-serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 130%;
@@ -1226,7 +1222,7 @@ select {
 .learn-left {
   background-color: #693fd7;
   border-radius: 12px 0 0 12px;
-  padding: 76px 81px 76px 60px;
+  padding: 104px 81px 90px 60px;
   color: #fff;
 }
 @media screen and (max-width: 767px) {
