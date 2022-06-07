@@ -240,21 +240,11 @@ select {
   }
   &::after {
     border: none;
-    content: "\f107";
+    content: url('/assets/image/arrow-down.svg');
     display: block;
-    font-family: "Font Awesome 5 Free";
-    font-size: 20px;
-    font-weight: 600;
     height: 5px;
-    margin-top: -4px;
     pointer-events: none;
     position: absolute;
-    right: 20px;
-    top: 60%;
-    transform-origin: 66% 66%;
-    transform: rotate(0deg);
-    transition: all 0.15s ease-in-out;
-    width: 5px;
   }
 }
 
@@ -265,12 +255,6 @@ select {
   font-weight: normal;
 }
 
-.nice-select.open:after {
-  top: 50%;
-  right: 15px;
-  transform: rotate(-180deg);
-}
-
 .nice-select.open .list {
   opacity: 1;
   pointer-events: auto;
@@ -278,6 +262,10 @@ select {
   width: 100%;
   border-radius: 7px;
   border: 1px solid #d1d5de;
+}
+
+.right-cate .nice-select::after{
+  content: url('/assets/image/arrow-down-white.svg');
 }
 
 // Section Title

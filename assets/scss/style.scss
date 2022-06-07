@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1320px;
 }
 
 h1,
@@ -213,7 +213,7 @@ select {
     font-size: 20px;
     font-weight: 600;
     height: 5px;
-    margin-top: -4px;
+    margin-top: -10px;
     pointer-events: none;
     position: absolute;
     right: 20px;
@@ -234,9 +234,8 @@ select {
 }
 
 .nice-select.open:after {
-  top: 40% !important;
-  right: 15px;
   transform: rotate(-180deg);
+  margin-top: 0;
 }
 
 .nice-select.open .list {
